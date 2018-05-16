@@ -1,0 +1,73 @@
+:root {
+  --color-primary: hsl(276, 82%, 56%);
+  --color-primary-light: #e0cdf0;
+  --color-primary-dark: rgb(127, 38, 186);
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white; }
+
+.nav {
+  background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-light); }
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav__item {
+    list-style: none;
+    font-size: 2.5rem; }
+    .nav__item-logo {
+      font-size: 4rem; }
+  .nav__link {
+    text-decoration: none; }
+
+.hero {
+  background-image: url(../threadheart.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.text-box {
+  width: 33.33%;
+  text-align: center;
+  color: var(--color-primary-dark); }
+  .text-box__heading {
+    display: flex;
+    flex-direction: column; }
+  .text-box__heading-top {
+    font-size: 5rem; }
+  .text-box__heading-bottom {
+    margin-top: 2rem;
+    font-size: 3rem; }
+
+.header {
+  box-shadow: var(--shadow-dark); }
